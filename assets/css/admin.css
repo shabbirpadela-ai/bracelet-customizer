@@ -1,0 +1,133 @@
+/**
+ * Admin styles for Bracelet Customizer Plugin
+ * Fixes label positioning in product data tabs
+ */
+
+/* Fix label positioning in our custom product data tabs */
+#bracelet_images_product_data .woocommerce_options_panel label,
+#bracelet_images_product_data .woocommerce_options_panel legend,
+#space_stones_product_data .woocommerce_options_panel label,
+#space_stones_product_data .woocommerce_options_panel legend,
+._bracelet_main_charm_image_field label,
+[class*="_bracelet_gap_image_"][class*="char_field"] label,
+[class*="_space_stone_pos_"][class*="_field"] label,
+[class*="_charm_position_image_"][class*="_field"] label,
+._product_main_image_field label,
+.letter-colors-field label {
+    float: none !important;
+    width: auto !important;
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.hide_if_charm {
+    display: none !important;
+}
+
+/* Ensure form fields have proper spacing */
+#bracelet_images_product_data .form-field,
+#space_stones_product_data .form-field {
+    margin-bottom: 15px;
+}
+
+/* Fix input field widths */
+#bracelet_images_product_data .form-field input[type="text"],
+#bracelet_images_product_data .form-field input[type="url"],
+#space_stones_product_data .form-field input[type="text"],
+#space_stones_product_data .form-field input[type="url"] {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Style the image upload containers */
+.gap-image-group,
+.space-stone-position-group,
+.space-stone-format-group,
+.main-charm-image-group {
+    background: #f8f9fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.space-stone-position-group {
+    background: #f9f9f9;
+    border-color: #e0e0e0;
+}
+
+.space-stone-format-group {
+    background: white;
+    border-color: #ddd;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+/* Section headers */
+.gap-image-group h4,
+.space-stone-position-group h4,
+.space-stone-format-group h5,
+.main-charm-image-group h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.space-stone-format-group h5 {
+    color: #34495e;
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+/* Image preview styling */
+.image-preview img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    padding: 4px;
+}
+
+/* Button styling */
+.upload-image-button,
+.remove-image-button {
+    margin-right: 8px;
+}
+
+/* Description text */
+.options_group .description {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Fix for WooCommerce form field wrapper classes */
+#bracelet_images_product_data .form-row-wide,
+#space_stones_product_data .form-row-wide {
+    width: 100%;
+}
+
+/* Ensure proper spacing for URL fields */
+#bracelet_images_product_data .woocommerce_options_panel .form-field input,
+#space_stones_product_data .woocommerce_options_panel .form-field input {
+    margin: 0;
+}
+
+/* Fix for specific field types */
+#bracelet_images_product_data p.form-field,
+#space_stones_product_data p.form-field {
+    margin-bottom: 1em;
+}
+
+#bracelet_images_product_data p.form-field label,
+#space_stones_product_data p.form-field label {
+    float: none !important;
+    width: auto !important;
+    margin: 0 0 5px 0 !important;
+    display: block !important;
+}
